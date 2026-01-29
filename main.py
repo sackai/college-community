@@ -8,8 +8,6 @@ from app.auth.dependencies import get_current_user
 
 app = FastAPI(title="My API", version="1.0.0")
 
-
-
 Base.metadata.create_all(bind=engine)
 
 app.include_router(auth_router)
